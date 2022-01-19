@@ -1,0 +1,787 @@
+/*************HEADER*************/
+.header-area 
+{
+  width: 100%;
+  z-index: 9;
+}
+
+.header-area .main-header-area 
+{
+  background: #fff;
+}
+
+.header-menu
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo img 
+{
+  width: 10em;
+}
+
+.navbar-brand
+{
+  color:rgb(61, 47, 47);
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-link
+{
+  position: relative;
+  color:rgb(61, 47, 47);
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-link:visited
+{
+  text-decoration: none;
+}
+
+.nav-link:hover
+{
+  color:rgb(61, 47, 47);
+}
+
+.nav-link:before 
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:rgb(61, 47, 47);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before 
+{
+  color: white;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.book_btn
+{
+  min-width: 12em;
+  background: #009DFF;
+  height: 4em;
+  font-size: 0.8rem;;
+  border: 1px solid transparent;
+  color: #fff; 
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book_btn:hover
+{
+  color: #009DFF;
+  background-color:white;
+  border-color:#009DFF;
+  transition: all 0.3s ease-in-out;
+} 
+
+/*************ACCUEIL*************/
+#infos
+{
+  background-image: url("../images/ide.png");
+  background-repeat: no-repeat;
+  min-height: 83vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#infos .information
+{
+  color: white;
+  max-width: 50%;
+  padding-top: 10%;
+  padding-left: 10%;
+  text-shadow: 0px 0px 20px red, 0 0 1em red, 0 0 1em red;
+}
+
+.information span
+{
+  font-weight: bold;
+}
+
+#infos p
+{
+  font-size: 1.3rem;
+}
+
+#infos .open-button
+{
+  background: #ad221b;
+  font-size: 1.3rem;
+  border: 1px solid #ad221b;
+  padding: 7px 15px;
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+#infos .open-button:hover
+{
+  background: transparent;
+  color: red;
+  border: 1px solid #ad221b;
+  transition: all 0.3s ease-in-out;
+
+}
+/*************FOOTER*************/
+
+.footer-area
+{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#footer-left
+{
+  width: 50%;
+  line-height: 0;
+}
+
+#footer-right
+{
+  width: 50%;
+  background-image: url("../images/infirmierefooter.jpg");
+  background-repeat: no-repeat;
+  max-width: 100%; 
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.icon
+{
+  padding-right: 20px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.icon em
+{
+  display: inline-block;
+}
+
+.addresscontent
+{
+  display: table-cell;
+}
+
+iframe 
+{
+  width: 100%;
+}
+
+
+
+#coordonnees
+{
+  margin-top: 7%;
+  margin-left: 14%;
+  width: 18em;
+  border: 3px solid #313ed770;
+  height: 21em;
+  margin-right: auto;
+  font-weight: bold;
+  padding: 1em;
+  box-shadow: 61px -34px #313ed770;
+}
+
+/*************Connexion*************/
+
+#connexion
+{
+  background-image: url("../images/ide.png");
+  background-repeat: no-repeat;
+  max-width: 100%; 
+  min-height: 90vh;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#connexion .container 
+{
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#connexion .container #MemberTitle
+{
+  color: red;
+  text-shadow: 1px 1px 2px snow, 0 0 1em red, 0 0 0.4em #ea1313;
+}
+
+#connexion .container .membre
+{
+  font-weight: bold;
+  color: black;
+}
+
+#connexion .container .membre a
+{
+  color: black;
+}
+
+/*************inscription*************/
+
+#inscription
+{
+  background-image: url("../images/ide.png");
+  background-repeat: no-repeat;
+  max-width: 100%; 
+  min-height: 90vh;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#inscription span
+{
+  color: black;
+  background-color: #f9f9fd8c;
+}
+
+
+#inscription .container
+{
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#inscription .container #MemberTitle
+{
+  color: red;
+}
+#inscription .container legend
+{
+  
+  font-weight: bold;
+
+}
+
+#inscription .container .formulaire
+{
+  font-weight: bold;
+  color: black;
+}
+.formulaire input
+{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background: #f1f1f1;
+}
+
+#inscription .container .formulaire a
+{
+  color: black;
+}
+
+.center
+{
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.inscriptionButton
+{
+  border: 1px solid white;
+  background: #4c7eab61;
+  width: 11em;
+  height: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/*************infirmiers*************/
+#infirmiers
+{
+  background-image: url("../images/ide.png");
+  background-repeat: no-repeat;
+  max-width: 100%; 
+  min-height: 90vh;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+#infirmiers .container
+{
+  max-width: initial;
+}
+
+#nosinfirmiers
+{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.4em black;
+}
+
+#nosinfirmiers h1
+{
+  text-align: center;
+  text-decoration: underline;
+}
+
+#nosinfirmiers .row 
+{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+#photoaurel img
+{
+  margin-top: 3%;
+  margin-left: 5%;
+  max-width: 607px;
+  border-radius: 20em;
+}
+
+
+#photocoline img
+{
+  margin-top: 3%;
+  margin-left: 5%;
+  max-width: 607px;
+  border-radius: 20em;
+}
+
+
+#photomarion img
+{
+  margin-left: 5%;
+  max-width: 607px;
+  border-radius: 20em;
+}
+
+/*************SOINS*************/
+#soins
+{
+  background-image: url("../images/ideback.png");
+  background-repeat: no-repeat;
+  min-height: 83vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#soins h1
+{
+  
+}
+
+.presentation
+{
+  color: white;
+  padding-top: 10%;
+  padding-left: 10%;
+  max-width: 80%;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  font-size: 1.25rem;
+}
+.presentation span
+{
+  font-weight: bold;
+}
+
+/*************POP UP *************/
+
+{box-sizing: border-box;}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #458CD8;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=mail] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/************* BACKEND *************/
+
+
+html, body 
+{
+  background-image: linear-gradient(white, #0d6efd);
+  background-attachment: fixed;
+  overflow-x: hidden; 
+}
+
+/* boutton deconnexion */
+.deconnexion 
+{
+  background: #ff0040;
+  padding: 12px 26px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: #fff; 
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.deconnexion:hover 
+{
+  color: #ff0040;
+  background-color:white;
+  border-color:#ff0040;
+  transition: all 0.3s ease-in-out;
+} 
+
+.menuMembre
+{
+  text-align: center;
+}
+
+.menuMembre ul 
+{
+  list-style-type: none;
+}
+
+.link_button 
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #4479BA;
+  color: #FFF;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.btnPatient
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #4479BA;
+  color: #FFF;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.membre legend
+{
+  margin-top: 0.5rem;
+}
+
+.membre form
+{
+  margin-top: 1em;
+  border: 1px solid white;
+  background: #4c7eab61;
+  width: 24em;
+  height: 13em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.inputButton
+{
+  border: 1px solid white;
+  background: #4c7eabba;
+  width: 8.5em;
+  height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+
+/*Nos patients */
+
+#listePatient
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2b3a70ab;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+
+#listePatient #titre
+{
+  margin: 2%;
+  color: white;
+}
+
+#listePatient .container
+{
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px 40px;
+}
+
+#listePatient .container .box
+{
+  position: relative;
+  min-height: 400px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #fff;
+  border-style: solid none none double;
+  border-radius: 12px / 24px; 
+}
+
+#listePatient .container .box:before
+{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  transform: skew(2deg,2deg);
+  z-index: -1;
+  
+}
+
+#listePatient .container .content
+{
+  position: relative;
+  padding: 20px;
+  z-index: 3;
+  background:#060c21 ;
+  
+}
+
+#listePatient .container .box .content h3 
+{
+  position: absolute;
+  top: -60px;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  color: rgba(255, 255, 255, .05);
+  transition: 0.5s;
+}
+
+#listePatient .container .box:hover .content h3
+{
+  top: -100px;
+}
+
+#listePatient .container .box .content h3
+{
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#listePatient .container .box .content em
+{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+/************* RESPONSIVE *************/
+
+@media screen and (max-width: 1440px) 
+{
+  #infos
+  {
+    min-height: 86vh;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) 
+{
+  #infos
+  {
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #infos .information
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #17304778;
+    color: white;
+    max-width: 90%;
+    text-shadow: 1px 1px 20px red, 1px 1px 0px red, 0px 0px 1em red;
+    border: 6px solid #ad221b;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 0;
+    padding-top: 5%;
+  }
+
+  #soins
+  {
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #soins .presentation
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #17304778;
+    color: white;
+    max-width: 90%;
+    text-shadow: 1px 1px 3px black, 0 0 3px black, 0 0 1em black;
+    border: 6px solid #2780d1;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 0;
+    padding-top: 5%;
+  }
+}
